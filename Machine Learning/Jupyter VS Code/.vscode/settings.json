@@ -1,0 +1,24 @@
+{
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": [
+              "comment",
+              "comment.block.documentation",
+              "comment.block.documentation.js",
+              "comment.line.double-slash.js",
+              "storage.type.class.jsdoc",
+              "entity.name.type.instance.jsdoc",
+              "variable.other.jsdoc",
+              "punctuation.definition.comment",
+              "punctuation.definition.comment.begin.documentation",
+              "punctuation.definition.comment.end.documentation"
+            ],
+            "settings": {
+              "fontStyle": "italic",
+              "foreground": "#287a1d"
+            }
+          }
+        ]
+      }
+}

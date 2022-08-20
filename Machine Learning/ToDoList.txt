@@ -1,0 +1,12 @@
+1. lec 91 of keish naik ML : medical live tracking
+
+ 2. See about sns.relplot
+ 3. Corelation vs Mutual info
+ 4. Parse_dates in pd.read_csv() function
+ 5. sns.barplot(x=,y=)
+ 6. sns.regplot() ## regression plot
+ 7. sns.scatterplot(x=,y=,hue=)
+ 8. sns.lmplot()
+ 9. sns.swarmplot()
+10. Histogram with sns.distplot()
+11. sns.jointplot()  ## combining two histograms

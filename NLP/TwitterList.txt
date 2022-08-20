@@ -1,0 +1,7 @@
+
+new blank model
+similarity_model
+how word vector works
+adding pipelines
+Matcher vs Entity Ruler
+regex vs matcher (at 1:37 time stamp)
