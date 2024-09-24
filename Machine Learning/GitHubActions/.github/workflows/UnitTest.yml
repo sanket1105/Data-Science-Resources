@@ -1,4 +1,4 @@
-name: Run Tests
+name: Run Unit Tests
 
 on:
   push:
@@ -22,9 +22,10 @@ jobs:
       - name: Install dependencies
         run: |
           cd "Machine Learning/GitHubActions"  # Navigate to your GitHubActions directory
-          pip install -r src/requirements.txt  # Adjust if you have a requirements.txt
+          pip install -r src/requirements.txt  # Install dependencies
 
       - name: Run tests
         run: |
-          cd "Machine Learning/GitHubActions"
-          pytest tests/test_operations.py
+          cd "Machine Learning/GitHubActions"  # Ensure you're in the correct directory
+          # Add the src directory to PYTHONPATH and run pytest
+          PYTHONPATH=src pytest tests/test_operations.py
