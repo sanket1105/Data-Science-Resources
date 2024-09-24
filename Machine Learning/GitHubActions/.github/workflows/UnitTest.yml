@@ -28,8 +28,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r Machine\ Learning/GitHubActions/src/requirements.txt
 
       # Step 4: Run tests
       - name: Run tests
-        run: pytest
+        run: 
+          cd Machine\ Learning/GitHubActions  # Navigate to your GitHubActions directory
+          pytest tests/test_operations.py
