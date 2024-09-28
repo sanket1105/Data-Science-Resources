@@ -1,11 +1,28 @@
+# Start from the jupyter/scipy-notebook base image
 FROM jupyter/scipy-notebook
 
-RUN pip install joblib
+VOLUME E:\DockerImages\
 
-COPY train.csv ./train.csv
-COPY test.csv ./test.csv
 
-COPY train.py ./train.py
-COPY inference.py ./inference.py
+# Set the working directory in the container
+WORKDIR /dockerbasic
 
+# Copy the requirements.txt file into the /app directory
+COPY requirements.txt .
+
+# Install Python dependencies from requirements.txt
+RUN pip install -r requirements.txt
+
+# Copy the models into the Docker image
+COPY models models .
+
+# Copy dataset files into the /app directory
+COPY train.csv .
+COPY test.csv .
+
+# Copy Python scripts into the /app directory
+COPY train.py .
+COPY inference.py .
+
+# Run the training script from the /app directory
 RUN python3 train.py
